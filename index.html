@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover and download wallpapers, GIFs, icons, emojis and stickers.">
+  <meta name="theme-color" content="#111827">
+  <title>PixelDuniya — Wallpapers, GIFs, Icons & Emojis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="PixelDuniya home">
+      <span class="brand-mark">✦</span><span>Pixel<span class="brand-accent">Duniya</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#explore">Explore</a><a href="#categories">Categories</a><a href="#about">About</a>
+    </nav>
+    <a class="submit-link" href="#how-it-works">How it works <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> YOUR DAILY DOSE OF VISUALS</div>
+        <h1>Find your next<br><span class="gradient-text">favourite visual.</span></h1>
+        <p class="hero-copy">Free-to-download wallpapers, GIFs, icons and emojis for every mood, screen and story.</p>
+        <form class="searchbar" id="search-form">
+          <span class="search-icon">⌕</span>
+          <input id="search-input" type="search" placeholder="Try “aesthetic wallpaper” or “happy emoji”" autocomplete="off" aria-label="Search downloads">
+          <button type="submit">Search <span>→</span></button>
+        </form>
+        <div class="popular-searches"><span>Popular:</span>
+          <button data-search="wallpaper">Wallpapers</button><button data-search="gif">GIFs</button><button data-search="emoji">Emojis</button><button data-search="icon">Icons</button>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Visual collection preview">
+        <div class="art-card art-card-back"><div class="mini-moon"></div><div class="mini-hill hill-a"></div><div class="mini-hill hill-b"></div><span class="art-label">DREAMSCAPE / 01</span></div>
+        <div class="art-card art-card-front"><span class="sticker-spark">✦</span><div class="big-emoji">🌈</div><div class="art-caption">A little colour<br>goes a long way.</div><span class="art-tag">GOOD VIBES ONLY</span></div>
+        <div class="floating-chip chip-gif"><span class="chip-icon">GIF</span><span>Animated<br><b>moments</b></span></div>
+        <div class="floating-chip chip-emoji"><span class="chip-emoji-face">😊</span><span>Express<br><b>yourself</b></span></div>
+      </div>
+    </section>
+
+    <section class="category-strip" id="categories">
+      <button class="category-pill active" data-category="all"><span>✧</span> All visuals</button>
+      <button class="category-pill" data-category="wallpaper"><span>▧</span> Wallpapers</button>
+      <button class="category-pill" data-category="gif"><span>↻</span> GIFs</button>
+      <button class="category-pill" data-category="icon"><span>◈</span> Icons</button>
+      <button class="category-pill" data-category="emoji"><span>☺</span> Emojis</button>
+      <button class="category-pill" data-category="sticker"><span>✿</span> Stickers</button>
+    </section>
+
+    <section class="collection-section" id="explore">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">THE COLLECTION</div><h2>Explore the good stuff<span class="heading-dot">.</span></h2><p>Little things that make your digital world feel more you.</p></div>
+        <div class="sort-wrap"><label for="sort-select">Sort by</label><select id="sort-select"><option value="featured">Featured</option><option value="az">Name: A–Z</option></select></div>
+      </div>
+      <div class="results-line"><span id="results-count">12 downloads</span><span>Demo collection · Original sample assets</span></div>
+      <div class="asset-grid" id="asset-grid">
+        <article class="asset-card" data-category="wallpaper" data-name="Aurora Dream Wallpaper" data-tags="aurora dream gradient nature mobile wallpaper">
+          <div class="asset-preview preview-aurora"><span class="preview-badge">WALLPAPER</span><div class="aurora-orb"></div><div class="aurora-wave wave-1"></div><div class="aurora-wave wave-2"></div><div class="preview-caption">chase the<br>quiet.</div></div>
+          <div class="asset-info"><div><h3>Aurora Dream</h3><p>Wallpaper · SVG</p></div><button class="download-btn" data-file="assets/aurora-dream.svg" aria-label="Download Aurora Dream">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="gif" data-name="Dancing Star GIF" data-tags="dancing star sparkle animated gif">
+          <div class="asset-preview preview-star"><span class="preview-badge">GIF</span><img src="assets/dancing-star.gif" alt="Animated dancing star" class="asset-image"></div>
+          <div class="asset-info"><div><h3>Dancing Star</h3><p>GIF · Animated</p></div><button class="download-btn" data-file="assets/dancing-star.gif" aria-label="Download Dancing Star">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="emoji" data-name="Happy Mood Emoji" data-tags="happy mood emoji smile yellow">
+          <div class="asset-preview preview-emoji"><span class="preview-badge">EMOJI</span><div class="emoji-blob">😊</div><span class="emoji-spark spark-a">✦</span><span class="emoji-spark spark-b">✧</span></div>
+          <div class="asset-info"><div><h3>Happy Mood</h3><p>Emoji · PNG</p></div><button class="download-btn" data-file="assets/happy-mood.png" aria-label="Download Happy Mood">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="icon" data-name="Minimal Spark Icon" data-tags="minimal spark icon outline ui">
+          <div class="asset-preview preview-icon"><span class="preview-badge">ICON</span><div class="icon-tile">✦</div><span class="icon-ring"></span></div>
+          <div class="asset-info"><div><h3>Minimal Spark</h3><p>Icon · SVG</p></div><button class="download-btn" data-file="assets/minimal-spark.svg" aria-label="Download Minimal Spark">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="wallpaper" data-name="Peach Sunset Wallpaper" data-tags="peach sunset warm aesthetic wallpaper phone">
+          <div class="asset-preview preview-sunset"><span class="preview-badge">WALLPAPER</span><div class="sun"></div><div class="sun-hill hill-1"></div><div class="sun-hill hill-2"></div><div class="sun-hill hill-3"></div></div>
+          <div class="asset-info"><div><h3>Peach Sunset</h3><p>Wallpaper · SVG</p></div><button class="download-btn" data-file="assets/peach-sunset.svg" aria-label="Download Peach Sunset">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="sticker" data-name="Good Vibes Sticker" data-tags="good vibes sticker happy smile">
+          <div class="asset-preview preview-sticker"><span class="preview-badge">STICKER</span><div class="sticker-shape"><span>GOOD<br>VIBES</span><b>✦</b></div></div>
+          <div class="asset-info"><div><h3>Good Vibes</h3><p>Sticker · PNG</p></div><button class="download-btn" data-file="assets/good-vibes.png" aria-label="Download Good Vibes">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="gif" data-name="Pulse Heart GIF" data-tags="pulse heart love animated gif">
+          <div class="asset-preview preview-heart"><span class="preview-badge">GIF</span><img src="assets/pulse-heart.gif" alt="Animated pulsing heart" class="asset-image"></div>
+          <div class="asset-info"><div><h3>Pulse Heart</h3><p>GIF · Animated</p></div><button class="download-btn" data-file="assets/pulse-heart.gif" aria-label="Download Pulse Heart">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="icon" data-name="Cloud Nine Icon" data-tags="cloud nine icon weather blue">
+          <div class="asset-preview preview-cloud"><span class="preview-badge">ICON</span><div class="cloud-icon">☁</div><span class="cloud-star">✧</span></div>
+          <div class="asset-info"><div><h3>Cloud Nine</h3><p>Icon · SVG</p></div><button class="download-btn" data-file="assets/cloud-nine.svg" aria-label="Download Cloud Nine">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="emoji" data-name="Love Eyes Emoji" data-tags="love eyes heart emoji romantic">
+          <div class="asset-preview preview-love"><span class="preview-badge">EMOJI</span><div class="emoji-blob">😍</div></div>
+          <div class="asset-info"><div><h3>Love Eyes</h3><p>Emoji · PNG</p></div><button class="download-btn" data-file="assets/love-eyes.png" aria-label="Download Love Eyes">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="wallpaper" data-name="Midnight Geometry" data-tags="midnight geometry abstract dark wallpaper">
+          <div class="asset-preview preview-geometry"><span class="preview-badge">WALLPAPER</span><div class="geo-shape geo-one"></div><div class="geo-shape geo-two"></div><div class="geo-shape geo-three"></div><span class="geo-text">LESS<br>NOISE.</span></div>
+          <div class="asset-info"><div><h3>Midnight Geometry</h3><p>Wallpaper · SVG</p></div><button class="download-btn" data-file="assets/midnight-geometry.svg" aria-label="Download Midnight Geometry">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="sticker" data-name="Tiny But Mighty Sticker" data-tags="tiny mighty sticker cute">
+          <div class="asset-preview preview-mighty"><span class="preview-badge">STICKER</span><div class="mighty-star">✦</div><div class="mighty-text">TINY<br>BUT MIGHTY</div></div>
+          <div class="asset-info"><div><h3>Tiny But Mighty</h3><p>Sticker · PNG</p></div><button class="download-btn" data-file="assets/tiny-mighty.png" aria-label="Download Tiny But Mighty">↓</button></div>
+        </article>
+        <article class="asset-card" data-category="icon" data-name="Playful Play Icon" data-tags="playful play icon media video">
+          <div class="asset-preview preview-play"><span class="preview-badge">ICON</span><div class="play-icon">▶</div><span class="play-orbit"></span></div>
+          <div class="asset-info"><div><h3>Playful Play</h3><p>Icon · SVG</p></div><button class="download-btn" data-file="assets/playful-play.svg" aria-label="Download Playful Play">↓</button></div>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden><div>⌕</div><h3>No visuals found</h3><p>Try another search or choose a different category.</p><button id="reset-search">Clear filters</button></div>
+      <div class="load-more-wrap"><p>That’s the starter collection. More original visuals can be added any time.</p><a href="#how-it-works" class="outline-btn">How downloads work <span>↓</span></a></div>
+    </section>
+
+    <section class="feature-band" id="how-it-works">
+      <div class="feature-copy"><div class="eyebrow">MADE FOR YOUR SCREEN</div><h2>Good visuals.<br><span class="gradient-text">No fuss.</span></h2><p>Browse a collection, preview what you like, and download the file in one click. This starter version includes original sample assets to test the experience.</p></div>
+      <div class="feature-list">
+        <div class="feature-item"><span class="feature-number">01</span><div><h3>Find your vibe</h3><p>Search by name or filter by category.</p></div><span class="feature-symbol">⌕</span></div>
+        <div class="feature-item"><span class="feature-number">02</span><div><h3>Preview the details</h3><p>See the style and format before saving.</p></div><span class="feature-symbol">◉</span></div>
+        <div class="feature-item"><span class="feature-number">03</span><div><h3>Download and enjoy</h3><p>Save supported sample files to your device.</p></div><span class="feature-symbol">↓</span></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about"><div><div class="eyebrow dark-eyebrow">A NOTE FROM US</div><h2>A little corner for<br>creative people.</h2></div><p>PixelDuniya is a starter project for discovering wallpapers, GIFs, icons, emojis and stickers. Before publishing publicly, replace sample assets with content you own or have permission to distribute, add clear licensing information, and set up a privacy page if analytics or ads are added.</p></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">✦</span><span>Pixel<span class="brand-accent">Duniya</span></span></a><span>Original sample assets · Starter website</span><span>© <span id="year"></span> PixelDuniya</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
